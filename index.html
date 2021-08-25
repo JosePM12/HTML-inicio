@@ -8,11 +8,16 @@
     <!--Titulo de 55-65 caracteres de longitud -->
     <meta name="description" content="En esta pagina estamos aprendiendo los fundamentos de HTML con @jonmircha">
     <!--Que no sea mayor de 165 caracteres-->
-
+    <style>
+        h2 {
+            color: orangered
+        }
+    </style>
+    <link rel="stylesheet" href="Style/estilos.css">
+    <link rel="stylesheet" href="Style/normalize.css">
 </head>
 
 <body>
-    <h1>Titulo del archivo HTML</h1>
     <!-- Esto es un comentario -->
     <hr>
     <h2>Inicios en HTML</h2>
@@ -103,10 +108,56 @@
     <hr>
 
     <h2>Etiquetas semanticas estructurales </h2>
+    <div>
+        Es una etiqueta contenedora que no tiene semántica
+    </div>
+    <header>
+        Cabecera de un sitio web o de una sección
+    </header>
+    <main>
+        Define la seccion principal del documento, solo puede existir una etiqueta main al igual que el h1 en un
+        documento
+    </main>
+    <footer>
+        Pie de página de un sitio web o de una sección del sitio
+    </footer>
+    <nav>
+        Representa una navegación, un menú de enlaces
+    </nav>
+    <article>
+        Representa una seccion autocontenido(que por si solo se explica)
+    </article>
+    <aside>
+        Representa un contenido complementario o secundario. (UNA LISTA DE ARTICULOS RELACIONADOS)
+    </aside>
+    <section>
+        Una seccion de contenido genérico
+    </section>
+    <address>
+        Representa una direccion física, además una información de contacto
+    </address>
+    <hr>
+    <h2>Etiquetas en linea VS Etiquetas en bloque</h2>
+    <div style="background-color: yellow; color : red">
+        Etiqueta de bloque por excelencia es el DIV, una etiqueta de bloque es aquella que genera saltos de linea con
+        sus etiquetas hermanas(h1,h2,...).
+        Ocupan todo el ancho del viewport
+    </div>
+    <span style="background-color:greenyellow;">
+        La etiqueta de linea por excelencia es el SPAN. Una etiqueta de linea solo ocupa el espacio necesario que tiene
+        su contenido
+    </span>
+    <!--El otro contenedor span sigue en una linea, es decir las etiquetas en linea no genera salto de linea-->
+    <span>
+        Hola soy otra span
+    </span>
+    <hr>
+    <h2>Estilos CSS en HTML</h2>
+
 </body>
 </body>
 
 </html>
-<!-- Nos quedamos en etiquetas(del video) -->
+<!-- Nos quedamos en 2:50:00-->
 <!-- https://www.youtube.com/watch?v=-oK6zL01fNM&t=3080s  tiempo : 1:25:00 // Tabla Periodica de HTML -->
 <!-- https://github.com/jonmircha/youtube-html-css/tree/master/01-CursoHTML -->
