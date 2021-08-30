@@ -1,7 +1,10 @@
 body{
     font-family: sans-serif;
 }
-
 h1{
     color:navy;
+}
+img{
+    max-width:100%; /*El 100% de la pantalla */
+    max-height: auto;
 }
