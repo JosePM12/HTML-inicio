@@ -23,12 +23,35 @@
 <body>
     <!-- Esto es un comentario -->
     <hr>
-    <h2>Inicios en HTML</h2>
+    <h2 id="inicio">Inicios en HTML</h2>
     <p>Hola, escribiendo mi documento HTML</p>
     <p>Aprendiendo Dise&ntilde;o Web</p>
+    <h3>Temario del Curso</h3>
+    <!--ul>li*18>a-->
+    <ul>
+        <li><a href="index.html#encabezados">Encabezados HTML</a></li>
+        <li><a href="index.html#texto-basico">Texto Básico HTML</a></li>
+        <li><a href="index.html#salto">Etiquetas de Salto</a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+    </ul>
     <!-- Eso es caracter especiales -->
     <hr>
-    <h2>Encabezados</h2>
+    <h2 id="encabezados">Encabezados</h2>
+    <!--Evita usar caracteres ajenos al ingles, y sin separaciones en los ID-->
     <h1>Encabezado de nivel 1</h1>
     <!-- Un solo h1 para benefiarse en la búsqueda, es como un unico titulo -->
     <h2>Encabezado de nivel 2</h2>
@@ -39,8 +62,9 @@
     <!-- Un punto de conteo o algo asi -->
     <h5>Encabezado de nivel 5</h5>
     <h6>Encabezado de nivel 6</h6>
+    <a href="index.html#inicio">🆙</a>
     <hr>
-    <h2>Parrafos y sus etquetas dentro de este</h2>
+    <h2 id="texto-basico">Parrafos y sus etiquetas dentro de este</h2>
     <p>Un parrafo</p>
     <!-- Parrafo -->
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae veritatis ab at qui porro blanditiis
@@ -73,7 +97,7 @@
         <!--El tiempo usando el datatime como lo entiende una computadora-->
     </p>
     <hr>
-    <h2>Etiquetas de salto</h2>
+    <h2 id="salto">Etiquetas de salto</h2>
     <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Nemo aspernatur ad similique hic distinctio
         deleniti vitae architecto quibusdam ea! <br> Excepturi exercitationem dolores ipsa praesentium fugit quasi alias
@@ -188,18 +212,162 @@
     <h2>Listas ordenadas</h2>
     <h3>Las estaciones del año</h3>
     <ol>
-
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
     </ol>
+    <ol start="3">
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ol>
+    <ol reversed>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ol>
+    <ol type="I">
+        <!--Numeros romanos, letras o simplemente arabigos-->
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ol>
+    <hr>
+    <h2>Listas Desordenadas</h2>
+    <h3>Cosas por hacer</h3>
+    <ul type="square">
+        <!--El tipo de viñeta-->
+        <li>Acabar el curso HTML</li>
+        <li>Matricularme para el proximo ciclo</li>
+        <li>Acabar el libro de C++</li>
+    </ul>
+    <ul type="disc">
+        <!--El tipo de viñeta predeterminado-->
+        <li>Acabar el curso HTML</li>
+        <li>Matricularme para el proximo ciclo</li>
+        <li>Acabar el libro de C++</li>
+    </ul>
+    <ul type="circle">
+        <!--El tipo de viñeta-->
+        <li>Acabar el curso HTML</li>
+        <li>Matricularme para el proximo ciclo</li>
+        <li>Acabar el libro de C++</li>
+    </ul>
+    <hr>
+    <h2>Listas de definición</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Es un lenguaje de marcado que define el contenido de la web</dd>
+        <dt>CSS</dt>
+        <dd>Es un lenguaje de definición que da estilos al código HTML</dd>
+        <dt>JavaScript</dt>
+        <dd>Es el lenguaje de la web</dd>
+    </dl>
+    <hr>
+    <h2>TABLAS HTML</h2>
+    <table>
+        <tr>
+            <td>Nombre</td>
+            <td>Equipo</td>
+            <td>Nacionalidad</td>
+        </tr>
+        <tr>
+            <td>Kilyan Mbappé</td>
+            <td>PSG</td>
+            <td>Francia</td>
+        </tr>
+        <tr>
+            <td>Cristiano Ronaldo</td>
+            <td>Manchester United</td>
+            <td>Portugal</td>
+        </tr>
+        <tr>
+            <td>Lionel Messi</td>
+            <td>Barcelona</td>
+            <td>Argentina</td>
+        </tr>
+    </table>
+    <br><br><br>
+    <table>
+
+        <thead>
+            <tr>
+                <th colspan="3">Tabla de famosos jugadores de fútbol</th>
+                <!--colspan, las columnas que quieres ocupar, tambien hay rowspan, en el caso que ya no serian columnas sino filas-->
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <th>Equipo</th>
+                <th>Nacionalidad</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Cristiano Ronaldo</td>
+                <td>Manchester United</td>
+                <td>Portugal</td>
+            </tr>
+            <tr>
+                <td>Lionel Messi</td>
+                <td>Barcelona</td>
+                <td>Argentina</td>
+            </tr>
+            <tr>
+                <td>Neymar</td>
+                <td rowspan="2">PSG</td>
+                <!--Se usa esta fila en 2 filas, por lo que no es necesario escribirlo en el siguiente-->
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>Kylian Mbappé</td>
+                <td>Francia</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th colspan="3"><small> Los equipos se han actualizados hoy</small></th>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <hr>
+
+    <h2>Enlaces en HTML</h2>
+
+    <a href="hola.html">Hacia la página Hola</a>
+    <br>
+    <a href="https://www.facebook.com/jose.pachasmariluz" target="_blank" rel="nofollow">Visita mi página de
+        facebook</a>
+    <!--Target es para abrilo en otra pestaña, _blank es para que se abra en otra pestaña-->
+    <!--rel="nofollow" es para saber si es un enlace externo y no es de tu pagina, en si es que no se relacione con tu pagina-->
+    <!--Para enlaces externos siempre colocar https -->
+    <!--Estos son bloques en linea-->
+    <a href="https://myanimelist.net/topanime.php" target="_blank">
+        <img src="Img/myanimelist-svgrepo-com.svg" alt="Ir hacia myanimelist" width=100px>
+    </a>
+    <!--Las imagenes tambien podrian ser enlaces, cualquier formato de imagen-->
+    <hr>
+    <h2>Enlaces Internos</h2>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <!--Lo recomendable es usar imagenes con vectores, osea SVG-->
     <script>
         console.log("Hola estoy aprendiendo HTML");
     </script>
+    <!--Los scripts de preferencia al final-->
     <script src="Script/script.js"></script>
     <!--Para llamar al archivo.js-->
 </body>
 </body>
 
 </html>
-<!--Nos quedamos en listas ordenadas-->
+<!--Nos quedamos en ENLACES INTERNOS, ya estamos por 4:00:40-->
+<!--Usando los enlaces internos, hacer una barra de navegacion de la pagina-->
 <!-- https://www.youtube.com/watch?v=-oK6zL01fNM&t=3080s  tiempo : 1:25:00 // Tabla Periodica de HTML -->
 <!-- https://github.com/jonmircha/youtube-html-css/tree/master/01-CursoHTML -->
