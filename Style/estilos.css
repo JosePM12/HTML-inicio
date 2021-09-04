@@ -9,7 +9,12 @@ body{
 h1{
     color:navy;
 }
-img{
+img,video{
     max-width:100%; /*El 100% de la pantalla */
     max-height: auto;
+}
+
+iframe{
+    width:80%;
+    height:400px;
 }
