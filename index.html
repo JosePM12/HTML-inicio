@@ -50,6 +50,7 @@
         <li><a href="index.html#audio-video">Audios y Videos</a></li>
         <li><a href="index.html#iframe">Iframes</a></li>
         <li><a href="index.html#formularios">Elementos de Formularios</a></li>
+        <li><a href="index.html#atributos-formularios">Atributos de formularios</a></li>
     </ul>
     <!-- Eso es caracter especiales -->
     <hr>
@@ -466,8 +467,130 @@
     <br>
     <a href="index.html#inicio">🆙</a>
     <hr>
-    <h2 id="formularios">Elementos de Formularios</h2>
+    <h2 id="formularios">Formularios</h2>
+    <h3>Elementos de formularios</h3>
+    <!--Elementos en linea-->
+    <!--Valor por defecto-->
+    <input type="text">
+    <br>
+    <!--Boton, para seleccionar una alternativa, al igual que radio(solo que este es circular)-->
+    <input type="checkbox">
+    <br>
+    <!--Boton-->
+    <input type="radio">
+    <br>
+    <!--Calendario-->
+    <input type="date">
+    <br>
+    <!--RGB-->
+    <input type="color">
+    <br>
+    <!--Parecido a la etiqueta button-->
+    <input type="button" value="Boton">
+    <br>
+    <!--Texto por defecto : ENVIAR-->
+    <input type="submit">
+    <br>
+    <!--Restablece a los valores por defecto-->
+    <input type="reset">
+    <br>
+    <!--Permite subir un archivo,solo 1-->
+    <input type="file">
+    <br>
+    <!--Seleccionar varios archivos-->
+    <input type="file" multiple>
+    <br>
+    <!--Ocultos-->
+    <!--Es cuando se envia el formulario retorna un valor-->
+    <input type="hidden" name="Idioma" value="es">
+    <br>
+    <!--En celulares,tablets, pc tactiles el teclado tactil te muestra @ o .com-->
+    <!--En si este input te pide un "@"-->
+    <input type="email">
+    <br>
+    <!--Al igual que en el anterior, el teclado tactil muestra el teclado numerico-->
+    <input type="number">
+    <br>
+    <!--En el teclado tactil, cambia a numeros y letras, "#",0-->
+    <input type="tel">
+    <!--Aunque en la pantalla de escritoria si parecen los input por defecto, pero en los dispositivos tactile cambia un poco-->
+    <br>
+    <!--Lo que se ingrese aparecen como "*" o puntos-->
+    <input type="password">
+    <br>
+    <!--Elimina el texto si quiere, tiene un simbolo de "x"-->
+    <input type="search">
+    <br>
+    <textarea cols="30" rows="10"></textarea>
+    <!--Se sugiere no escribir nada porque apareceria-->
+    <!--Numero de reglones, y el numero de caracteres a lo ancho, si sobrepasa muestra una barra para subir o bajar-->
+    <!--Tambien son elementos en linea-->
+    <br>
+    <select multiple>
+        <!--Estas listass te permiten elegir una sola opcion, pero al igual que en el input file usaremos multiple-->
+        <option value="">HTML</option>
+        <option value="">CSS</option>
+        <option value="">JavaScript</option>
+        <option value="">PHP</option>
+        <option value="">Python</option>
+        <option value="">C++</option>
+        <option value="">Java</option>
+        <option value="">R</option>
 
+    </select>
+    <br>
+    <a href="index.html#inicio">🆙</a>
+    <hr>
+    <h3 id="atributos-formularios">Atributos de los Formularios</h3>
+    <input type="text" value="josepm12" readonly disabled>
+    <!--Readonly:Solo de lectura-->
+    <!--Disabled: aparece de un color medio gris-->
+    <!--Nos quedamos en esta sección-->
+    <input type="text" placeholder="Escribe tu nombre">
+    <!--El placeholder es como una marca de agua que desaparece cuando el usuario empieza a escribir-->
+    <h3>Ejemplo de Formulario</h3>
+    <h4>Formulario de Login</h4>
+    <form action="https://www.facebook.com/jose.pachasmariluz" method="POST">
+        <!--Por defecto el metodo es GET-->
+        <!--Con post se coloca lo de usuario y password en la cabecera-->
+        <!--Sin el atributo action, es como si se recargara la pagina-->
+        <!--Autocomplete: No le aparece lo que escribio antes como un recordatorio, eso si le pones false, por defecto es on-->
+        <label for="usuario">Usuario: </label>
+        <!--For: vincula el label con el input, el id y el for deben ser los mismos-->
+        <input type="text" name="usuario" id="usuario" placeholder="Escribe tu usuario" pattern="^[A-Za-z]+$"
+            title="El campo solo acepta letras" required>
+        <!--Pattern son como restricciones en este caso solo permite ingresar letras minusculas y mayusculas, el formato es "^[]+$"-->
+        <!--Y si escribes un valor que rompe la restriccion, entonces al tener el required te dice que esta mal-->
+        <!--Required: Te pide completar los campos osea no se puede enviar vacio-->
+        <!--Los inputs deben de tener names siempre-->
+        <br>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" placeholder="Escribe tu correo" autocomplete="off">
+        <!--El autocomplete puede funcionar en todos los elementos del formulario o en cada elemento que usted desee-->
+        <br>
+        <label for="password">Contraseña: </label>
+        <input type="password" name="password" id="password" placeholder="Escribe tu contraseña" required>
+        <br>
+        <input type="submit">
+        <!--Envia la informacion al link de action agregando "/?usuario=(lo que ingresas)&password=(lo que se ingreso)", significa que se esta pasando una variable"-->
+        <br>
+        <input type="reset">
+        <!--Limpia los elementos del formulario-->
+    </form>
+    <h4>Selects,Radios y Checkbox</h4>
+    <form>
+        <p>Elige tu Idioma</p>
+        <select name="idioma">
+            <option value="">Elige una opción</option>
+            <option value="es">Español</option>
+            <option value="en">Ingles</option>
+            <option value="fr">France</option>
+            <option value="it">Italiano</option>
+            <option value="pt">Portugues</option>
+        </select>
+        <input type="submit">
+        <input type="reset">
+    </form>
     <br>
     <a href="index.html#inicio">🆙</a>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -479,9 +602,5 @@
     <script src="Script/script.js"></script>
     <!--Para llamar al archivo.js-->
 </body>
-</body>
-
-</html>
-<!--Nos quedamos en Iframe, ya estamos por 4:55:00-->
+<!--Nos quedamos en la seccion 40-->
 <!--Usando los enlaces internos, hacer una barra de navegacion de la pagina-->
-<!-- https://github.com/jonmircha/youtube-html-css/tree/master/01-CursoHTML -->
